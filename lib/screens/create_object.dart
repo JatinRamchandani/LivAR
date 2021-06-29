@@ -1,11 +1,13 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:ar_flutter_dynamic2/album/album.dart';
+import 'package:ar_flutter_dynamic2/album/specs.dart';
 import 'package:ar_flutter_dynamic2/screens/remote_object.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:developer' as developer;
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+
 
 Future<Album> fetchAlbum() async {
   final response =
